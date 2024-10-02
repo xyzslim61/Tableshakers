@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  background-color: rgb(230, 224, 224);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.left-sect {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 23px;
+  object-fit: cover;
+}
+div p {
+  color: rgb(7, 82, 7);
+  text-shadow: 2px 2px 5px rgba(235, 121, 8, 0.5);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.right-sect {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.review-icon {
+  height: 45px;
+}
+.contact-icon {
+  height: 45px;
+}
+
+.tooltipM {
+  display: block;
+  position: absolute;
+  bottom: -35px;
+  left: -5px;
+  background-color: gray;
+  padding: 6px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: white;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+}
+.ham-menu {
+  display: block;
+  height: 25px;
+}
+.tooltip-cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tooltip {
+  position: absolute;
+  bottom: -35px;
+  left: -40px;
+  background-color: gray;
+  padding: 8px 16px 8px 16px;
+  border-radius: 2px;
+  font-size: 15px;
+  color: white;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+}
+.tooltip-cont:hover .tooltip,
+.tooltip-cont:hover .tooltipM {
+  opacity: 1;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+  column-gap: 10px;
+  row-gap: 5px;
+}
+.Fp-box {
+  position: relative;
+}
+
+.Fp-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.item-descript {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 10px;
+  background-color: rgba(100, 100, 100, 0.3);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-descript:hover {
+  opacity: 1;
+}
+.item-name {
+  font-size: 15px;
+  color: white;
+}
+.Address-box {
+  margin: 95px 10px 10px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add {
+  font-size: 15px;
+  font-weight: bold;
+}
+.Fp-box2,
+.Fp-img2.item-descript2,
+.item-name2 {
+  display: none;
+}
+.box,
+.about-box,
+.Copyright,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pict {
+  height: 25px;
+  margin: 7px;
+}
+.bt-page {
+  height: 150px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 20px;
+  border-radius: 2px;
+}
+.lp {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+.Copyright {
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.right {
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  margin-top: 2px;
+}
+@media (max-width: 850px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(230, 224, 224);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .left-sect {
+    width: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  div p {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .ham-menu {
+    display: block;
+    height: 25px;
+  }
+
+  .logo {
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .right-sect {
+    width: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 2px;
+  }
+
+  .review-icon {
+    height: 25px;
+  }
+  .contact-icon {
+    height: 25px;
+  }
+
+  .tooltipM {
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    left: -5px;
+    background-color: gray;
+    padding: 6px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: -35px;
+    left: -40px;
+    background-color: gray;
+    padding: 8px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+  }
+
+  .tooltip-cont:hover .tooltipM {
+    opacity: 1;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 55px 7px 7px 7px;
+    column-gap: 5px;
+    row-gap: 5px;
+    overflow: hidden;
+  }
+  .Fp-box {
+    position: relative;
+  }
+
+  .Fp-img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .item-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-shadow: none;
+  }
+  .item-descript {
+    position: absolute;
+    top: 0px;
+    bottom: -150px;
+    padding: 2px;
+    opacity: 1;
+    display: flex;
+    justify-content: left;
+    cursor: none;
+    pointer-events: none;
+    background-color: rgba(235, 235, 235, 0.1);
+  }
+
+  .item-descript:hover {
+    display: none;
+  }
+  .Address-box {
+    margin: 55px 7px 7px 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .add {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
